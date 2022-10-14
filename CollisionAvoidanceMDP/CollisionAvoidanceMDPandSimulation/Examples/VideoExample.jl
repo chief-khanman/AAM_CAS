@@ -7,7 +7,7 @@ env =  CollisionAvoidanceEnv(   is_MDP=false,
                                 maximum_aircraft_speed=50.0, 
                                 detection_radius=1000.0, 
                                 pilot_function=nothing,
-                                max_time=500.0, # in seconds
+                                max_time=200.0, # in seconds 
                                 timestep=1.0,)
 
 # Note this function is equilvalent of calling step! until max time is reached

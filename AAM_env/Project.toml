@@ -1,0 +1,18 @@
+name = "AAM_env"
+uuid = "85f27f57-c284-4b97-bc75-6356829ad22d"
+authors = ["akhan1 "]
+version = "0.1.0"
+
+[deps]
+BSON = "fbb218c0-5317-5bc6-957e-2ee96dd4b1f0"
+CircularArrayBuffers = "9de3a189-e0c0-4e15-ba3b-b14b9fb0aec1"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+Graphs = "86223c79-3864-5bf0-83f7-82e725a168b6"
+IntervalSets = "8197267c-284f-5f27-9208-e0e47529a953"
+ProgressMeter = "92933f4c-e287-5a05-a399-4b506db050ca"
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
+ReinforcementLearning = "158674fc-8238-5cab-b5ba-03dfc80d1318"
+ReinforcementLearningBase = "e575027e-6cd6-5018-9292-cdc6200d2b44"
+ReinforcementLearningZoo = "d607f57d-ee1e-4ba7-bcf2-7734c1e31854"
+StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"

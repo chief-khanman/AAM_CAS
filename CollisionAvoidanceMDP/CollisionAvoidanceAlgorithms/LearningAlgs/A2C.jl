@@ -71,7 +71,7 @@ function A2C( env, num_seconds)
     # make directory to store results
     directory = "Experiments/A2C"
     directory = getFileName(directory)
-    mkdir(directory)
+    mkpath(directory)
     println("Saving results to ", directory, "...")
 
     # save the raw reward data

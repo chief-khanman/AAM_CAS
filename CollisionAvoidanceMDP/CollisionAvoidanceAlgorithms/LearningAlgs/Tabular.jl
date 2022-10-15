@@ -45,7 +45,7 @@ function Tabular( env, num_seconds)
     # make directory to store results
     directory = "Experiments/Tabular"
     directory = getFileName(directory)
-    mkdir(directory)
+    mkpath(directory)
     println("Saving results to ", directory, "...")
 
     # save the raw reward data

@@ -88,7 +88,7 @@ function DDPG( env, num_seconds)
     # make directory to store results
     directory = "Experiments/DDPG"
     directory = getFileName(directory)
-    mkdir(directory)
+    mkpath(directory)
     println("Saving results to ", directory, "...")
 
     # save the raw reward data

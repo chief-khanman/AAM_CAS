@@ -94,7 +94,7 @@ function TD3( env, num_seconds)
     # make directory to store results
     directory = "Experiments/TD3"
     directory = getFileName(directory)
-    mkdir(directory)
+    mkpath(directory)
     println("Saving results to ", directory, "...")
 
     # save the raw reward data

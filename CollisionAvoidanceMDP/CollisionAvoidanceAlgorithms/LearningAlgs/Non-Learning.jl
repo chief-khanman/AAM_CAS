@@ -16,7 +16,7 @@ function Basic( env, num_seconds)
     # make directory to store algorithm - just for consistency
     directory = "Experiments/Basic"
     directory = getFileName(directory)
-    mkdir(directory)
+    mkpath(directory)
 
     # save the model. Note we must also create variables state_space and action_space, that list the spaces as either discrete or continuous using Symbols (:Discrete is a symbol)
     model = basic_pilot

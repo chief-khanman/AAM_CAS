@@ -2,7 +2,7 @@ include("Includes.jl")
 
 ############## settings ##############
 algs = [TD3, A2C, PPO, DDPG, DQN, Tabular, Basic, Sophisticated]   # functions to run. Takes env and number seconds as parameters
-training_seconds = 600                             # number of seconds each alg runs
+training_seconds = 30                             # number of seconds each alg runs
 ######################################
 
 

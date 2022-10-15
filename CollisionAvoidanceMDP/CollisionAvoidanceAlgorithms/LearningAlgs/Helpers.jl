@@ -7,7 +7,7 @@ function getFileName(name::String, extension::String="")
     current_dir = @__DIR__
     while true
         # append an index
-        current_name = name * "_" * string(index) * extension
+        current_name = current_dir *"/../" * name * "_" * string(index) * extension 
         # if name is used, try next index. If not used, break
         if !ispath(current_name) 
             break

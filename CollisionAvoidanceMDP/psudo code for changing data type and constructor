@@ -1,0 +1,12 @@
+1- search for mutable struct
+2- choose the struct you eant to change
+3- search "datatype" replace "datatype_constructor"
+4- search "::datatype_constructor" replace "::datatype"
+5- search "struct datatype_constructor" replace "struct datatype"
+6- search "return datatype_constructor" replace "return datatype"
+
+
+7- check include file for change in directory name
+8- change all the places that has vector{data type_constructor} replace vector{data type}
+
+

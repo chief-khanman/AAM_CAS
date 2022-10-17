@@ -8,7 +8,7 @@ training_seconds = 30                             # number of seconds each alg r
 
 
 ##### Main script #####
-env =  CollisionAvoidanceEnv(   is_MDP=true,
+env =  CollisionAvoidanceEnv_constructor(   is_MDP=true,
                                 max_time=1000.0, # 1 hour
                                 )
 

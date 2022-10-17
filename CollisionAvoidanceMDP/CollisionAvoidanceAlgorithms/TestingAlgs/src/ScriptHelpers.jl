@@ -48,7 +48,7 @@ function createStatsForAlg(; refresh, dir, spawn_rate_stats, number_trials, boun
                 setSpawnRate(spawn_controller, spawn_rate)
 
                 # create env for testing
-                env =  CollisionAvoidanceEnv(   is_MDP=false,
+                env =  CollisionAvoidanceEnv_constructor(   is_MDP=false,
                     spawn_controller=spawn_controller,
                     max_time=max_sim_time,
                     rng=MersenneTwister(i),
@@ -77,7 +77,7 @@ function createVideoForAlg(;current_dir, dir, refresh, spawn_controller, boundar
         println("Recording ", dir)
         setSpawnRate(spawn_controller, spawn_rate_video)
         # create env for testing
-        local env =  CollisionAvoidanceEnv(   is_MDP=false,
+        local env =  CollisionAvoidanceEnv_constructor(   is_MDP=false,
                     spawn_controller=spawn_controller,
                     max_time=max_sim_time,
                     restricted_areas=boundary_sm,

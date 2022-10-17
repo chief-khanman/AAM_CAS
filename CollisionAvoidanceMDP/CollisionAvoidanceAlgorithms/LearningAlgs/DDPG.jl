@@ -78,7 +78,7 @@ function DDPG( env, num_seconds)
 
         stop_condition = StopAfterNSeconds(Float64(num_seconds))
         hook = TotalRewardPerEpisode()
-        return Experiment(agent, env, stop_condition, hook, "# Play CollisionAvoidanceEnv with DDPG")
+        return Experiment(agent, env, stop_condition, hook, "# Play CollisionAvoidanceEnv_constructor with DDPG")
     end
 
     # run the experiment

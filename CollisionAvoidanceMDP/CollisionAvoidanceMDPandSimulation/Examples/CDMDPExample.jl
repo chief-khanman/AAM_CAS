@@ -2,7 +2,7 @@ include("../CollisionAvoidanceMDPandSimulation.jl")
 
 
 
-env =  CollisionAvoidanceEnv(   is_MDP=true,
+env =  CollisionAvoidanceEnv_constructor(   is_MDP=true,
                                 boundary=Cartesian2(10000, 10000), 
                                 spawn_controller=ConstantSpawnrateController(Cartesian2(10000, 10000), true, 50.0),
                                 maximum_aircraft_acceleration=Polar2(3.0, 2pi/30),

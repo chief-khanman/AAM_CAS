@@ -34,7 +34,7 @@ function Tabular( env, num_seconds)
         )
         stop_condition = StopAfterNSeconds(Float64(num_seconds))
         hook = TotalRewardPerEpisode()
-        return Experiment(policy, env, stop_condition, hook, "# Play CollisionAvoidanceEnv with Tabular")
+        return Experiment(policy, env, stop_condition, hook, "# Play CollisionAvoidanceEnv_constructor with Tabular")
     end
 
     # run the experiment

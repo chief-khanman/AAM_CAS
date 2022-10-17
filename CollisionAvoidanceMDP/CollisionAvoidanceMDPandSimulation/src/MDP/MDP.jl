@@ -30,7 +30,7 @@ mutable struct CollisionAvoidanceEnv <: AbstractEnv
 end
 
 # constructor. IF given no args, it will be an MDP
-function CollisionAvoidanceEnv(;is_MDP::Bool=true,
+function CollisionAvoidanceEnv_constructor(;is_MDP::Bool=true,
                                 boundary::Cartesian2=Cartesian2(10000, 10000), 
                                 spawn_controller::AbstractSpawnController=ConstantSpawnrateController(boundary, is_MDP),
                                 restricted_areas::ShapeManager=ShapeManager(),

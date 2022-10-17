@@ -40,7 +40,7 @@ function DQN( env, num_seconds)
         stop_condition = StopAfterNSeconds(Float64(num_seconds))
         hook = TotalRewardPerEpisode()
 
-        return Experiment(agent, env, stop_condition, hook, "# Play CollisionAvoidanceEnv with DQN")
+        return Experiment(agent, env, stop_condition, hook, "# Play CollisionAvoidanceEnv_constructor with DQN")
     end
     # run the experiment
     ex = get_ex(env)

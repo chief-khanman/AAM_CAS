@@ -1,7 +1,7 @@
 # Note this code just needs to not crash
 
 # test 1, MDP
-env =  CollisionAvoidanceEnv(   is_MDP=true,
+env =  CollisionAvoidanceEnv_constructor(   is_MDP=true,
                                 boundary=Cartesian2(10000, 10000), 
                                 maximum_aircraft_acceleration=Polar2(3.0, 2pi/10),
                                 maximum_aircraft_speed=50.0, 
@@ -26,7 +26,7 @@ for _ in 1:10
 end
 
 # test 2, simulation
-env =  CollisionAvoidanceEnv(   is_MDP=false,
+env =  CollisionAvoidanceEnv_constructor(   is_MDP=false,
                                 boundary=Cartesian2(10000, 10000), 
                                 spawn_controller=ConstantSpawnrateController(Cartesian2(10000, 10000), false, 1.0),
                                 maximum_aircraft_acceleration=Polar2(3.0, 2pi/10),
@@ -46,7 +46,7 @@ for _ in 1:10
 end
 
 # test 3, spawn function works
-env =  CollisionAvoidanceEnv(   is_MDP=true,
+env =  CollisionAvoidanceEnv_constructor(   is_MDP=true,
                                 boundary=Cartesian2(10000, 10000), 
                                 spawn_controller=ConstantSpawnrateController(Cartesian2(10000, 10000), true, 5000.0),
                                 maximum_aircraft_acceleration=Polar2(3.0, 2pi/10),
@@ -65,7 +65,7 @@ for i  in 2:length(env.airspace.all_aircraft)
 end
 
 # test 4, verify random number generator consistency
-env =  CollisionAvoidanceEnv(   is_MDP=false,
+env =  CollisionAvoidanceEnv_constructor(   is_MDP=false,
                                 boundary=Cartesian2(10000, 10000), 
                                 spawn_controller=ConstantSpawnrateController(Cartesian2(10000, 10000), true, 5000.0),
                                 maximum_aircraft_acceleration=Polar2(3.0, 2pi/10),

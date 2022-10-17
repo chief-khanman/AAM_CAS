@@ -83,7 +83,7 @@ function TD3( env, num_seconds)
 
         stop_condition = StopAfterNSeconds(Float64(num_seconds))
         hook = TotalRewardPerEpisode()
-        Experiment(agent, env, stop_condition, hook, "# Play CollisionAvoidanceEnv with TD3")
+        Experiment(agent, env, stop_condition, hook, "# Play CollisionAvoidanceEnv_constructor with TD3")
     end
 
 
